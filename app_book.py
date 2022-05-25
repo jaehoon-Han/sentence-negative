@@ -23,8 +23,8 @@ best_book.drop_duplicates('title')
 def run_book() :
 
     
-    st.image(best_book.loc[random.randint(0,97988), 'img_url'])
-    st.image(best_book.loc[random.randint(0,97988), 'img_url'])
-    st.image(best_book.loc[random.randint(0,97988), 'img_url'])
+    st.image(best_book.loc[random.randint(0,2136), 'img_url'])
+    st.image(best_book.loc[random.randint(2167,4272), 'img_url'])
+    st.image(best_book.loc[random.randint(4273,6418), 'img_url'])
     st.dataframe(best_book_not)
 
