@@ -4,8 +4,8 @@ import random
 
 
 best_book = pd.read_csv('data/best_book_2021_12.csv')
-best_book = best_book.loc[:,['title','author','description','img_url','rank','age']]
 best_book.dropna(axis=0, subset = ['description','img_url'],inplace = True)
+best_book = best_book.loc[:,['title','author','description','img_url','rank','age']]
 
 def run_book() :
 
