@@ -7,7 +7,9 @@ from app_book import run_book
 df1 = pd.read_csv('data/NL_bo_sense_2019.csv')
 df2 = pd.read_csv('data/NL_BO_SENSE_2021.csv')
 df3 = pd.read_csv('data/NL_BO_SENSE_202012.csv')
-
+best_book = pd.read_csv('data/best_book_2021_12.csv')
+best_book.dropna(axis=0, subset = ['description','img_url'],inplace = True)
+best_book = best_book.loc[:,['title','author','description','img_url','age']]
 
 
 def main() :
