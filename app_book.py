@@ -16,6 +16,7 @@ best_book.drop(df_index1, inplace= True)
 best_book.drop(df_index2, inplace= True)
 best_book.drop(df_index3, inplace= True)
 best_book.drop(df_index4, inplace= True)
+best_book = best_book['age'].dropna()
 
 best_book.drop_duplicates('title')
 
