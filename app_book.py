@@ -8,7 +8,7 @@ def run_book() :
     best_book.dropna(axis=0, subset = ['description','img_url'],inplace = True)
     best_book = best_book.loc[:,['title','author','description','img_url','age']]
     best_book_not = best_book.loc[:,['title','author','description','age']]
-    best_book = best_book['age'].dropna()
+    best_book['age'] = best_book['age'].dropna()
 
     
     best_book20 = best_book[best_book['age'].str.contains('20대')==True]
