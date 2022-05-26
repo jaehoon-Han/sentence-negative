@@ -17,5 +17,6 @@ def run_book() :
     st.image(best_book2030.loc[random.randint(0,best_book2030.shape[0]), 'img_url'])
     st.image(best_book2030.loc[random.randint(0,best_book2030.shape[0]), 'img_url'])
     st.image(best_book2030.loc[random.randint(0,best_book2030.shape[0]), 'img_url'])
+         
     st.dataframe(best_book2030)
 
