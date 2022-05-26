@@ -16,6 +16,6 @@ def run_book() :
     best_book2030 = pd.concat([best_book20,best_book30]).reset_index()
     st.image(best_book2030.loc[random.randint(0,best_book2030.shape[0]/3), 'img_url'])
     st.image(best_book2030.loc[random.randint(best_book2030.shape[0]/3,(best_book2030.shape[0]/3)*2), 'img_url'])
-    st.image(best_book2030.loc[random.randint((best_book2030.shape[0]/3)*2),(best_book2030.shape[0]), 'img_url'])
+    st.image(best_book2030.loc[random.randint(((best_book2030.shape[0]/3)*2),(best_book2030.shape[0])), 'img_url'])
     st.dataframe(best_book2030)
 
