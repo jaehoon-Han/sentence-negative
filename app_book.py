@@ -10,7 +10,7 @@ def run_book() :
     best_book_not = best_book.loc[:,['title','author','description','age']]
     best_book = best_book['age'].dropna()
 
-    best_book = best_book.drop_duplicates('title')
+    
     best_book20 = best_book[best_book['age'].str.contains('20대')==True]
     best_book30 = best_book[best_book['age'].str.contains('30대')==True]
     best_book2030 = pd.concat([best_book20,best_book30]).reset_index()
