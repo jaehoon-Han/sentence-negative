@@ -15,10 +15,10 @@ def run_book() :
     best_book = best_book.loc[:,['title','author','description','img_url','age']]
     best_book_not = best_book.loc[:,['title','author','description','age']]
     best_book = best_book['age'].dropna()
-    df_index1 = best_book.loc[best_book['age'].str.contains('청소년')== True, ].index
-    df_index2 = best_book.loc[best_book['age'].str.contains('영유아')== True, ].index
-    df_index3 = best_book.loc[best_book['age'].str.contains('유아')== True, ].index
-    df_index4 = best_book.loc[best_book['age'].str.contains('초등')== True, ].index
+    df_index1 = best_book.loc[best_book['age'].str.contains('청소년')== True, ]
+    df_index2 = best_book.loc[best_book['age'].str.contains('영유아')== True, ]
+    df_index3 = best_book.loc[best_book['age'].str.contains('유아')== True, ]
+    df_index4 = best_book.loc[best_book['age'].str.contains('초등')== True, ]
     best_book = best_book.drop(df_index1, axis=0)
     best_book = best_book.drop(df_index2, axis=0)
     best_book = best_book.drop(df_index3, axis=0)
