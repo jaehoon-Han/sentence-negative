@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import streamlit as st
+import matplotlib.pyplot as plt
 
 from app_book import run_book
 
@@ -24,3 +25,6 @@ def main() :
 
 if __name__ == '__main__' :
     main()
+
+    plt.pie()
+    plt()
