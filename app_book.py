@@ -23,5 +23,3 @@ def run_book() :
          
     st.dataframe(best_book2030_not)
     best_book.rename
-
-    plt.py
